@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "SR New Tab",
+  "version": "1.0.0",
+  "description": "A simple React app as a Chrome extension",
+  "permissions": ["storage", "tabs", "contextMenus", "notifications"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "service_worker": "assets/js/background.js"
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  }
+}
