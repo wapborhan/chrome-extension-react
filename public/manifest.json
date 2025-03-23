@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "SR New Tab",
+  "name": "SRNewTab",
   "version": "1.0.0",
-  "description": "A simple React app as a Chrome extension",
+  "description": "A simple New tab app for Chrome browser",
   "permissions": ["storage", "tabs", "contextMenus", "notifications"],
   "action": {
     "default_popup": "popup.html"
