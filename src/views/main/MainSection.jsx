@@ -1,13 +1,14 @@
 import React from "react";
 import Watch from "./watch/Watch";
 import Search from "./Search";
-import { FaPencilAlt } from "react-icons/fa";
+import ShortCut from "./shortcut/ShortCut";
 
-const MainSection = ({ handleHandleMenuToggle }) => {
+const MainSection = () => {
   return (
     <main>
       <Watch />
       <Search />
+      <ShortCut />
     </main>
   );
 };
