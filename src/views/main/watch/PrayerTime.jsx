@@ -1,36 +1,47 @@
 import React from "react";
+import { timingFormatter } from "../../../hooks/timingFormatter";
 
-const PrayerTime = () => {
-  const convertToBengaliDigits = (time) => {
-    const bengaliDigits = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"];
-    return time.replace(/\d/g, (digit) => bengaliDigits[digit]);
-  };
-
-  const prayerTime = [
-    { time: "04:30", name: "ফজর" },
-    { time: "12:30", name: "যোহর" },
-    { time: "15:30", name: "আসর" },
-    { time: "18:30", name: "মাগরিব" },
-    { time: "20:30", name: "এশা" },
+const PrayerTime = ({ prayerTime }) => {
+  const prayerTimes = [
+    {
+      time: prayerTime && timingFormatter(prayerTime?.timings?.Fajr),
+      name: "Fajr",
+    },
+    {
+      time: prayerTime && timingFormatter(prayerTime?.timings?.Dhuhr),
+      name: "Dhuhr",
+    },
+    {
+      time: prayerTime && timingFormatter(prayerTime?.timings?.Asr),
+      name: "Asr",
+    },
+    {
+      time: prayerTime && timingFormatter(prayerTime?.timings?.Maghrib),
+      name: "Maghrib",
+    },
+    {
+      time: prayerTime && timingFormatter(prayerTime?.timings?.Isha),
+      name: "Isha",
+    },
   ];
 
-  const prayerTimeList = prayerTime.map((prayer) => (
+  const prayerTimeList = prayerTimes.map((prayer) => (
     <li
       key={prayer.name}
       className="flex tiles"
       style={{
-        gap: "10px",
-        padding: "5px 20px",
+        gap: "5px",
+        padding: "5px 10px",
         justifyContent: "space-between",
       }}
     >
       <span>{prayer.name}</span>{" "}
-      <span>{convertToBengaliDigits(prayer.time) + "AM"} </span>
+      <span className="text-nowrap w-full">{prayer.time}</span>
     </li>
   ));
   return (
     <div className="flex w-full justify-center">
-      <ul className="tilesContainer flex flex-col" style={{ gap: "10px" }}>
+      <ul className="tilesContainer flex flex-col" style={{ gap: "8px" }}>
         {prayerTimeList}
       </ul>
     </div>

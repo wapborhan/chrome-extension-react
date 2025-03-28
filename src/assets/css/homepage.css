@@ -1050,6 +1050,7 @@ main {
   margin: auto 10px auto 0;
   color: var(--textColorDark-blue);
   height: fit-content;
+  text-wrap: nowrap;
 }
 
 .humidityBar {
@@ -1109,17 +1110,12 @@ main {
     transform: rotate(0deg);
   }
 }
-
-.rightDiv .topDiv .rAndakar .wInfo {
-  /* position: absolute; */
-  /* top: 0; */
-  /* bottom: 0; */
-  /* left: 0; */
-  /* right: 0; */
-  margin: auto;
-  transform: translateX(14px);
-  width: 100px;
-  height: 80%;
+.wInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #temp {
@@ -1540,9 +1536,15 @@ main {
   background-color: var(--darkColor-blue);
 }
 
-.shortcutsContainer .shortcuts a svg {
-  height: 50px;
-  width: 50px;
+.shortcutsContainer .shortcuts a svg,
+.shortcutsContainer .shortcuts a .shortcutLogoContainer img {
+  height: 40px;
+  width: 40px;
+}
+.shortcutsContainer .shortcuts a svg path,
+polyline,
+line {
+  fill: var(--darkColor-blue) !important;
 }
 
 .shortcutsContainer .shortcuts .shortcutLogoContainer {
@@ -1785,6 +1787,7 @@ main {
   justify-content: center;
   /* align-items: center; */
   position: relative;
+  transition: all 0.3s;
 }
 
 /* ---------------Menu-bar-css---------------- */

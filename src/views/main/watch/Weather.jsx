@@ -1,66 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import useWeatherData from "../../../hooks/useWeatherData";
 
 const Weather = () => {
-  const [weatherData, setWeatherData] = useState(null);
+  const { weatherData } = useWeatherData();
   const [unit, setUnit] = useState("C");
-
-  useEffect(() => {
-    const fetchWeatherData = async () => {
-      try {
-        const savedApiKey = localStorage.getItem("weatherApiKey");
-        const savedLocation = localStorage.getItem("weatherLocation");
-        const lastFetchTime = localStorage.getItem("lastFetchTime");
-
-        const weatherApiKeys = [
-          "db0392b338114f208ee135134240312",
-          "de5f7396db034fa2bf3140033240312",
-          "c64591e716064800992140217240312",
-          "9b3204c5201b4b4d8a2140330240312",
-        ];
-        const defaultApiKey =
-          savedApiKey ||
-          weatherApiKeys[Math.floor(Math.random() * weatherApiKeys.length)];
-
-        const currentTime = new Date().getTime();
-
-        // If cached data exists and was fetched less than 1 hour ago, use it
-        if (lastFetchTime && currentTime - lastFetchTime < 60 * 60 * 1000) {
-          const cachedData = localStorage.getItem("weatherData");
-          if (cachedData) {
-            setWeatherData(JSON.parse(cachedData));
-            return;
-          }
-        }
-
-        let currentUserLocation = savedLocation;
-        if (!currentUserLocation) {
-          const locationResponse = await fetch("https://ipinfo.io/json/");
-          const locationData = await locationResponse.json();
-          currentUserLocation = locationData.loc || "auto:ip";
-          localStorage.setItem("weatherLocation", currentUserLocation);
-        }
-
-        const weatherApi = `https://api.weatherapi.com/v1/current.json?key=${defaultApiKey}&q=${currentUserLocation}&aqi=no`;
-        const response = await fetch(weatherApi);
-        const data = await response.json();
-
-        setWeatherData(data);
-
-        // Save data and timestamp in localStorage
-        localStorage.setItem("weatherData", JSON.stringify(data));
-        localStorage.setItem("lastFetchTime", currentTime.toString());
-      } catch (error) {
-        console.error("Error fetching weather data:", error);
-      }
-    };
-
-    fetchWeatherData();
-
-    // Set interval to fetch new data every hour
-    const interval = setInterval(fetchWeatherData, 60 * 60 * 1000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="topDiv">
@@ -91,19 +34,20 @@ const Weather = () => {
                 "https://cdn"
               )}
             />
-            <div id="conditionText" style={{ color: "#ffffff" }}>
-              {/* {weatherData?.current?.condition?.text} */}
-            </div>
+          </div>
+          <div
+            id="conditionText"
+            className="humidityBar"
+            style={{ color: "#ffffff" }}
+          >
+            <div className="slider" id="slider">
+              <div id="humidityLevel">{weatherData?.location?.name}</div>
+            </div>{" "}
           </div>
         </div>
         <div className="cconnt">
           <div className="humidityBar">
-            {/* <div className="thinLine"></div> */}
-            <div
-              className="slider"
-              id="slider"
-              // style={{ width: `${weatherData?.current?.humidity}%` }}
-            >
+            <div className="slider" id="slider">
               <div id="humidityLevel">
                 Humidity {weatherData?.current?.humidity}%
               </div>
@@ -125,19 +69,11 @@ const Weather = () => {
           <div className="tilesContainer">
             <div className="tiles">
               <div className="icon">🌡</div>
-              <span id="feelsLike">
-                Feels{" "}
-                {unit === "C"
-                  ? weatherData?.current?.feelslike_c
-                  : weatherData?.current?.feelslike_f}
-                °{unit}
-              </span>
-            </div>
-            <div className="tiles location">
-              <div className="icon">📍</div>
-              <span className="location_spn" id="location">
-                {weatherData?.location?.name}
-              </span>
+              <span id="feelsLike">Suhoor 00:00 am</span>
+            </div>{" "}
+            <div className="tiles">
+              <div className="icon">🌡</div>
+              <span id="feelsLike">Iftar 00:00 am</span>
             </div>
           </div>
         </div>

@@ -41,7 +41,25 @@ const Time = () => {
     <div className="digital-clock">
       <div className="flexs">
         <div id="date" className="date">
-          ১৫ রমজান, ১৪৪৬ যুগ <br /> শনিবার, {time.date}
+          {new Intl.DateTimeFormat("en-GB", {
+            day: "numeric",
+            month: "long",
+            // weekday: "long",
+            year: "numeric",
+            timeZone: "Asia/Dhaka",
+          })
+            .format(Date.now())
+            .replace(/(\w+)\s/, "$1, ")}{" "}
+          <br />
+          {new Intl.DateTimeFormat("en-GB-u-ca-islamic", {
+            day: "numeric",
+            month: "long",
+            // weekday: "long",
+            year: "numeric",
+            timeZone: "Asia/Dhaka",
+          })
+            .format(Date.now())
+            .replace(/(\w+)\s/, "$1, ")}
         </div>
         <div className="time">
           <div id="hour" className="hour">
