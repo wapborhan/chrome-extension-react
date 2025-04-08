@@ -6,10 +6,6 @@ const useWeatherData = () => {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const savedApiKey = localStorage.getItem("weatherApiKey");
-        const savedLocation = localStorage.getItem("weatherLocation");
-        const lastFetchTime = localStorage.getItem("lastFetchTime");
-
         const weatherApiKeys = [
           "8c5cf30a7eb74a4db77184553252803",
           "db0392b338114f208ee135134240312",
@@ -17,9 +13,16 @@ const useWeatherData = () => {
           "c64591e716064800992140217240312",
           "9b3204c5201b4b4d8a2140330240312",
         ];
-        const defaultApiKey =
-          savedApiKey ||
-          weatherApiKeys[Math.floor(Math.random() * weatherApiKeys.length)];
+
+        let savedApiKey = localStorage.getItem("weatherApiKey");
+        let savedLocation = localStorage.getItem("weatherLocation");
+        const lastFetchTime = localStorage.getItem("lastFetchTime");
+
+        if (!savedApiKey) {
+          savedApiKey =
+            weatherApiKeys[Math.floor(Math.random() * weatherApiKeys.length)];
+          localStorage.setItem("weatherApiKey", savedApiKey);
+        }
 
         const currentTime = new Date().getTime();
 
@@ -31,15 +34,14 @@ const useWeatherData = () => {
           }
         }
 
-        let currentUserLocation = savedLocation;
-        if (!currentUserLocation) {
+        if (!savedLocation) {
           const locationResponse = await fetch("https://ipinfo.io/json/");
           const locationData = await locationResponse.json();
-          currentUserLocation = locationData.loc || "auto:ip";
-          localStorage.setItem("weatherLocation", currentUserLocation);
+          savedLocation = locationData.loc || "auto:ip";
+          localStorage.setItem("weatherLocation", savedLocation);
         }
 
-        const weatherApi = `https://api.weatherapi.com/v1/current.json?key=${defaultApiKey}&q=${currentUserLocation}&aqi=no`;
+        const weatherApi = `https://api.weatherapi.com/v1/current.json?key=${savedApiKey}&q=${savedLocation}&aqi=no`;
         const response = await fetch(weatherApi);
         const data = await response.json();
 

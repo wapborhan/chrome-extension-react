@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PrayerTime from "./PrayerTime";
 import Time from "./Time";
 import Weather from "./Weather";
 import usePrayerTime from "../../../hooks/usePrayerTime";
 
 const Watch = () => {
+  const [location, setLocation] = useState({});
+
+  useEffect(() => {
+    const savedLocation = localStorage.getItem("weatherLocation");
+    if (savedLocation) {
+      setLocation(savedLocation.split(","));
+    } else {
+      setLocation([23.908775911770977, 89.12264749493718]);
+    }
+  }, []);
+
   const [prayerTime] = usePrayerTime({
-    latitude: 23.908775911770977,
-    longitude: 89.12264749493718,
+    latitude: location[0],
+    longitude: location[1],
   });
 
   return (
@@ -16,7 +27,7 @@ const Watch = () => {
         <PrayerTime prayerTime={prayerTime} />
         <Time />
         <div className="rightDiv ">
-          <Weather />
+          <Weather prayerTime={prayerTime} />
         </div>
       </div>
     </div>

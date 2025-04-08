@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import useWeatherData from "../../../hooks/useWeatherData";
+import { timingFormatter } from "../../../hooks/timingFormatter";
 
-const Weather = () => {
+const Weather = ({ prayerTime }) => {
   const { weatherData } = useWeatherData();
   const [unit, setUnit] = useState("C");
 
@@ -38,11 +39,20 @@ const Weather = () => {
           <div
             id="conditionText"
             className="humidityBar"
-            style={{ color: "#ffffff" }}
+            style={{ color: "#ffffff", justifyContent: "end" }}
           >
-            <div className="slider" id="slider">
-              <div id="humidityLevel">{weatherData?.location?.name}</div>
-            </div>{" "}
+            <div className="slider" id="slider" style={{ width: "62%" }}>
+              <div
+                id="humidityLevel"
+                style={{
+                  margin: "auto",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                }}
+              >
+                {weatherData?.location?.name}
+              </div>
+            </div>
           </div>
         </div>
         <div className="cconnt">
@@ -69,11 +79,17 @@ const Weather = () => {
           <div className="tilesContainer">
             <div className="tiles">
               <div className="icon">🌡</div>
-              <span id="feelsLike">Suhoor 00:00 am</span>
+              <span id="feelsLike">
+                Suhoor{" "}
+                {prayerTime && timingFormatter(prayerTime?.timings?.Imsak)}
+              </span>
             </div>{" "}
             <div className="tiles">
               <div className="icon">🌡</div>
-              <span id="feelsLike">Iftar 00:00 am</span>
+              <span id="feelsLike">
+                Iftar{" "}
+                {prayerTime && timingFormatter(prayerTime?.timings?.Maghrib)}
+              </span>
             </div>
           </div>
         </div>

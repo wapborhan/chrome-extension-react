@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Todo from "./views/Todo";
 import "./assets/css/homepage.css";
 import MainSection from "./views/main/MainSection";
@@ -8,11 +8,12 @@ import { FaPencilAlt } from "react-icons/fa";
 import AccountSection from "./views/accounsection/AccountSection";
 
 function App() {
-  const [showMenu, setShowMenu] = React.useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleHandleMenuToggle = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <>
       <div className="main-content">

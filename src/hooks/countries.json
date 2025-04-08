@@ -1,0 +1,622 @@
+[
+  {
+    "capital": "primary",
+    "id": "dhaka",
+    "latitude": 23.7639,
+    "longitude": 90.3889,
+    "name": "Dhaka"
+  },
+  {
+    "capital": "admin",
+    "id": "chattogram",
+    "latitude": 22.335,
+    "longitude": 91.8325,
+    "name": "Chattogram"
+  },
+  {
+    "id": "gazipura",
+    "latitude": 23.9889,
+    "longitude": 90.375,
+    "name": "Gazipura"
+  },
+  {
+    "capital": "admin",
+    "id": "rajshahi",
+    "latitude": 24.3667,
+    "longitude": 88.6,
+    "name": "Rajshahi"
+  },
+  {
+    "capital": "admin",
+    "id": "khulna",
+    "latitude": 22.8167,
+    "longitude": 89.55,
+    "name": "Khulna"
+  },
+  {
+    "id": "rangapukur",
+    "latitude": 25.56,
+    "longitude": 89.25,
+    "name": "Rangapukur"
+  },
+  {
+    "id": "narayanganj",
+    "latitude": 23.62,
+    "longitude": 90.5,
+    "name": "Narayanganj"
+  },
+  {
+    "capital": "admin",
+    "id": "mymensingh",
+    "latitude": 24.7539,
+    "longitude": 90.4031,
+    "name": "Mymensingh"
+  },
+  {
+    "capital": "admin",
+    "id": "sylhet",
+    "latitude": 24.9,
+    "longitude": 91.8667,
+    "name": "Sylhet"
+  },
+  {
+    "id": "sirajganj",
+    "latitude": 24.45,
+    "longitude": 89.75,
+    "name": "Sirajganj"
+  },
+  {
+    "id": "chauddagram",
+    "latitude": 23.2283,
+    "longitude": 91.3133,
+    "name": "Chauddagram"
+  },
+  {
+    "id": "kushtia",
+    "latitude": 23.9101,
+    "longitude": 89.1231,
+    "name": "Kushtia"
+  },
+  {
+    "id": "barura",
+    "latitude": 23.375,
+    "longitude": 91.0583,
+    "name": "Barura"
+  },
+  {
+    "id": "bogra",
+    "latitude": 24.85,
+    "longitude": 89.3667,
+    "name": "Bogra"
+  },
+  {
+    "id": "tangail",
+    "latitude": 24.2644,
+    "longitude": 89.9181,
+    "name": "Tangail"
+  },
+  {
+    "id": "savar",
+    "latitude": 23.85,
+    "longitude": 90.26,
+    "name": "Savar"
+  },
+  {
+    "id": "tungi",
+    "latitude": 23.9,
+    "longitude": 90.41,
+    "name": "Tungi"
+  },
+  {
+    "id": "comilla",
+    "latitude": 23.45,
+    "longitude": 91.2,
+    "name": "Comilla"
+  },
+  {
+    "capital": "admin",
+    "id": "rangpur",
+    "latitude": 25.75,
+    "longitude": 89.2444,
+    "name": "Rangpur"
+  },
+  {
+    "id": "brahmanbaria",
+    "latitude": 23.9656,
+    "longitude": 91.108,
+    "name": "Brahmanbaria"
+  },
+  {
+    "id": "feni",
+    "latitude": 23.0183,
+    "longitude": 91.41,
+    "name": "Feni"
+  },
+  {
+    "id": "siddhirganj",
+    "latitude": 23.6833,
+    "longitude": 90.5167,
+    "name": "Siddhirganj"
+  },
+  {
+    "id": "jhenida",
+    "latitude": 23.5417,
+    "longitude": 89.1833,
+    "name": "Jhenida"
+  },
+  {
+    "id": "companiganj",
+    "latitude": 22.875,
+    "longitude": 91.2833,
+    "name": "Companiganj"
+  },
+  {
+    "id": "jessore",
+    "latitude": 23.1704,
+    "longitude": 89.2,
+    "name": "Jessore"
+  },
+  {
+    "id": "banchpar",
+    "latitude": 23.2,
+    "longitude": 90.8,
+    "name": "Banchpar"
+  },
+  {
+    "id": "saidpur",
+    "latitude": 25.8004,
+    "longitude": 89,
+    "name": "Saidpur"
+  },
+  {
+    "id": "nazipur",
+    "latitude": 25.0415,
+    "longitude": 88.7605,
+    "name": "Nazipur"
+  },
+  {
+    "capital": "admin",
+    "id": "barishal",
+    "latitude": 22.7,
+    "longitude": 90.3667,
+    "name": "Barishal"
+  },
+  {
+    "id": "chuadanga",
+    "latitude": 23.644,
+    "longitude": 88.8556,
+    "name": "Chuadanga"
+  },
+  {
+    "id": "coxs-bazar",
+    "latitude": 21.4272,
+    "longitude": 92.005,
+    "name": "Cox’s Bazar"
+  },
+  {
+    "id": "dinajpur",
+    "latitude": 25.6167,
+    "longitude": 88.65,
+    "name": "Dinajpur"
+  },
+  {
+    "id": "brahmanpara",
+    "latitude": 23.6167,
+    "longitude": 91.1083,
+    "name": "Brahmanpara"
+  },
+  {
+    "id": "pabna",
+    "latitude": 24.0167,
+    "longitude": 89.2167,
+    "name": "Pabna"
+  },
+  {
+    "id": "narsingdi",
+    "latitude": 23.9231,
+    "longitude": 90.7122,
+    "name": "Narsingdi"
+  },
+  {
+    "id": "jamalpur",
+    "latitude": 24.9004,
+    "longitude": 89.95,
+    "name": "Jamalpur"
+  },
+  {
+    "id": "naogaon",
+    "latitude": 24.8,
+    "longitude": 88.9333,
+    "name": "Naogaon"
+  },
+  {
+    "id": "bhandaria",
+    "latitude": 22.4883,
+    "longitude": 90.0733,
+    "name": "Bhandaria"
+  },
+  {
+    "id": "nawabganj",
+    "latitude": 24.6,
+    "longitude": 88.2667,
+    "name": "Nawabganj"
+  },
+  {
+    "id": "sripur",
+    "latitude": 24.2011,
+    "longitude": 90.4843,
+    "name": "Sripur"
+  },
+  {
+    "id": "maijdi",
+    "latitude": 22.8333,
+    "longitude": 91.1,
+    "name": "Maijdi"
+  },
+  {
+    "id": "faridpur",
+    "latitude": 23.602,
+    "longitude": 89.833,
+    "name": "Faridpur"
+  },
+  {
+    "id": "fulgazi",
+    "latitude": 23.1333,
+    "longitude": 91.4333,
+    "name": "Fulgazi"
+  },
+  {
+    "id": "satkhira",
+    "latitude": 22.7188,
+    "longitude": 89.0713,
+    "name": "Satkhira"
+  },
+  {
+    "id": "netrakona",
+    "latitude": 24.8819,
+    "longitude": 90.7275,
+    "name": "Netrakona"
+  },
+  {
+    "id": "goalundo-ghat",
+    "latitude": 23.7333,
+    "longitude": 89.7617,
+    "name": "Goalundo Ghat"
+  },
+  {
+    "id": "bhola",
+    "latitude": 22.6833,
+    "longitude": 90.65,
+    "name": "Bhola"
+  },
+  {
+    "id": "habiganj",
+    "latitude": 24.3808,
+    "longitude": 91.4144,
+    "name": "Habiganj"
+  },
+  {
+    "id": "lakshmipur",
+    "latitude": 22.94,
+    "longitude": 90.833,
+    "name": "Lakshmipur"
+  },
+  {
+    "id": "manikganj",
+    "latitude": 23.85,
+    "longitude": 90.0167,
+    "name": "Manikganj"
+  },
+  {
+    "id": "kaukhali",
+    "latitude": 22.6333,
+    "longitude": 90.0667,
+    "name": "Kaukhali"
+  },
+  {
+    "id": "patuakhali",
+    "latitude": 22.3542,
+    "longitude": 90.3181,
+    "name": "Patuakhali"
+  },
+  {
+    "id": "panchari-bazar",
+    "latitude": 23.29,
+    "longitude": 91.9,
+    "name": "Panchari Bazar"
+  },
+  {
+    "id": "nakhyaungcharipara",
+    "latitude": 21.4167,
+    "longitude": 92.1833,
+    "name": "Nakhyaungcharipara"
+  },
+  {
+    "id": "lalmanirhat",
+    "latitude": 25.9167,
+    "longitude": 89.45,
+    "name": "Lalmanirhat"
+  },
+  {
+    "id": "pirojpur",
+    "latitude": 22.578,
+    "longitude": 89.968,
+    "name": "Pirojpur"
+  },
+  {
+    "id": "arankhola",
+    "latitude": 24.661,
+    "longitude": 90.0884,
+    "name": "Arankhola"
+  },
+  {
+    "id": "gaibandha",
+    "latitude": 25.329,
+    "longitude": 89.5415,
+    "name": "Gaibandha"
+  },
+  {
+    "id": "raharpur",
+    "latitude": 24.8194,
+    "longitude": 88.325,
+    "name": "Raharpur"
+  },
+  {
+    "id": "elenga",
+    "latitude": 24.3386,
+    "longitude": 89.9219,
+    "name": "Elenga"
+  },
+  {
+    "id": "jalakati",
+    "latitude": 22.6386,
+    "longitude": 90.1993,
+    "name": "Jalakati"
+  },
+  {
+    "id": "sherpur",
+    "latitude": 24.665,
+    "longitude": 89.419,
+    "name": "Sherpur"
+  },
+  {
+    "id": "gopalganj",
+    "latitude": 23.01,
+    "longitude": 89.82,
+    "name": "Gopalganj"
+  },
+  {
+    "id": "sunamganj",
+    "latitude": 25.071,
+    "longitude": 91.4035,
+    "name": "Sunamganj"
+  },
+  {
+    "id": "gopalpur",
+    "latitude": 24.5583,
+    "longitude": 89.9167,
+    "name": "Gopalpur"
+  },
+  {
+    "id": "muktagacha",
+    "latitude": 24.7662,
+    "longitude": 90.2562,
+    "name": "Muktagacha"
+  },
+  {
+    "id": "chhagalnaiya",
+    "latitude": 23.0395,
+    "longitude": 91.5146,
+    "name": "Chhagalnaiya"
+  },
+  {
+    "id": "bharella",
+    "latitude": 23.5506,
+    "longitude": 91.0566,
+    "name": "Bharella"
+  },
+  {
+    "id": "char-fasson",
+    "latitude": 22.1861,
+    "longitude": 90.7597,
+    "name": "Char Fasson"
+  },
+  {
+    "id": "maulavi-bazar",
+    "latitude": 24.4808,
+    "longitude": 91.7644,
+    "name": "Maulavi Bazar"
+  },
+  {
+    "id": "dohazari",
+    "latitude": 22.1628,
+    "longitude": 92.0728,
+    "name": "Dohazari"
+  },
+  {
+    "id": "kalihati",
+    "latitude": 24.3833,
+    "longitude": 89.9833,
+    "name": "Kalihati"
+  },
+  {
+    "id": "sitakund",
+    "latitude": 22.62,
+    "longitude": 91.66,
+    "name": "Sitakund"
+  },
+  {
+    "id": "benapol",
+    "latitude": 23.0419,
+    "longitude": 88.8956,
+    "name": "Benapol"
+  },
+  {
+    "id": "kishmat-dhanbari",
+    "latitude": 24.6167,
+    "longitude": 90.025,
+    "name": "Kishmat Dhanbari"
+  },
+  {
+    "id": "chandanais",
+    "latitude": 22.2,
+    "longitude": 92.0083,
+    "name": "Chandanais"
+  },
+  {
+    "id": "hatibanda",
+    "latitude": 24.2105,
+    "longitude": 90.1492,
+    "name": "Hatibanda"
+  },
+  {
+    "id": "daganbhuiya",
+    "latitude": 22.9127,
+    "longitude": 91.3181,
+    "name": "Daganbhuiya"
+  },
+  {
+    "id": "barguna",
+    "latitude": 22.15,
+    "longitude": 90.1167,
+    "name": "Barguna"
+  },
+  {
+    "id": "nagdha-simla",
+    "latitude": 24.6143,
+    "longitude": 89.9166,
+    "name": "Nagdha Simla"
+  },
+  {
+    "id": "lohagara",
+    "latitude": 22.0181,
+    "longitude": 92.0974,
+    "name": "Lohagara"
+  },
+  {
+    "id": "nalchiti",
+    "latitude": 22.635,
+    "longitude": 90.27,
+    "name": "Nalchiti"
+  },
+  {
+    "id": "majidpur",
+    "latitude": 23.5796,
+    "longitude": 90.7689,
+    "name": "Majidpur"
+  },
+  {
+    "id": "sakhipur",
+    "latitude": 24.3167,
+    "longitude": 90.175,
+    "name": "Sakhipur"
+  },
+  {
+    "id": "parsuram",
+    "latitude": 23.2135,
+    "longitude": 91.4447,
+    "name": "Parsuram"
+  },
+  {
+    "id": "mathba",
+    "latitude": 22.3,
+    "longitude": 89.95,
+    "name": "Mathba"
+  },
+  {
+    "id": "mirzapur",
+    "latitude": 24.1083,
+    "longitude": 90.0917,
+    "name": "Mirzapur"
+  },
+  {
+    "id": "daulatkhan",
+    "latitude": 22.6,
+    "longitude": 90.7472,
+    "name": "Daulatkhan"
+  },
+  {
+    "id": "duptiair",
+    "latitude": 23.991,
+    "longitude": 89.7982,
+    "name": "Duptiair"
+  },
+  {
+    "id": "lakshmicharipara",
+    "latitude": 22.79,
+    "longitude": 91.9,
+    "name": "Lakshmicharipara"
+  },
+  {
+    "id": "phulpur",
+    "latitude": 24.955,
+    "longitude": 90.3573,
+    "name": "Phulpur"
+  },
+  {
+    "id": "mundamala",
+    "latitude": 24.6081,
+    "longitude": 88.4728,
+    "name": "Mundamala"
+  },
+  {
+    "id": "amtali",
+    "latitude": 22.137,
+    "longitude": 90.228,
+    "name": "Amtali"
+  },
+  {
+    "id": "shahbazpur",
+    "latitude": 24.0531,
+    "longitude": 91.1719,
+    "name": "Shahbazpur"
+  },
+  {
+    "id": "sonagazi",
+    "latitude": 22.8492,
+    "longitude": 91.3928,
+    "name": "Sonagazi"
+  },
+  {
+    "id": "jagatpur",
+    "latitude": 23.6048,
+    "longitude": 90.7628,
+    "name": "Jagatpur"
+  },
+  {
+    "id": "harinakunda",
+    "latitude": 23.65,
+    "longitude": 89.0333,
+    "name": "Harinakunda"
+  },
+  {
+    "id": "latifpur",
+    "latitude": 24.1181,
+    "longitude": 90.1478,
+    "name": "Latifpur"
+  },
+  {
+    "id": "baisari",
+    "latitude": 22.79,
+    "longitude": 90.1313,
+    "name": "Baisari"
+  },
+  {
+    "id": "dhubaria",
+    "latitude": 24.0044,
+    "longitude": 89.8484,
+    "name": "Dhubaria"
+  },
+  {
+    "id": "faradabad",
+    "latitude": 23.7445,
+    "longitude": 90.8772,
+    "name": "Faradabad"
+  },
+  {
+    "id": "fatikchari",
+    "latitude": 22.6878,
+    "longitude": 91.7811,
+    "name": "Fatikchari"
+  }
+]

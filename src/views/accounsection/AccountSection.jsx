@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
+import { AuthContext } from "../../context/AuthContext";
 import LinkList from "./LinkList";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 
